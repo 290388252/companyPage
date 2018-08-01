@@ -12,7 +12,7 @@
   position: absolute;
   left:-50px;
   text-align: center;
-  margin-top: -23px;
+  margin-top: -13px;
 }
 .header-title {
   position: absolute;
@@ -44,7 +44,7 @@
   text-align: center;
 }
 .selected {
-  background: red;
+  background: dodgerblue;
   outline:none;
   width: 80px;
   height: 75px;
@@ -57,7 +57,7 @@
 }
 #menu li:hover{
   cursor: pointer;
-  background: red;
+  background: dodgerblue;
   width: 80px;
   height: 75px;
 }
