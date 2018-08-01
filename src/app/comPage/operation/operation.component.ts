@@ -13,7 +13,7 @@ import * as $ from 'jquery';
 @Component({
   selector: 'app-operation',
   templateUrl: './operation.component.html',
-  styleUrls: ['./operation.component.scss'],
+  styleUrls: ['./operation.component.scss','../animate/animate.min.css'],
   animations: [routerTransition()]
 })
 
