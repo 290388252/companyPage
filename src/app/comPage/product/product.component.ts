@@ -13,7 +13,7 @@ import * as $ from 'jquery';
 @Component({
   selector: 'app-productpage',
   templateUrl: './product.component.html',
-  styleUrls: ['./product.component.scss'],
+  styleUrls: ['./product.component.scss', '../animate/animate.min.css'],
   animations: [routerTransition()]
 })
 
@@ -23,7 +23,7 @@ export class ProductComponent implements OnInit {
     // this.Oon = document.getElementsByClassName('on')[0];
   }
   ngOnInit() {
-    $('app-slider').css('display', 'none');
-    $('.content').css('margin-top', '100px');
+    /*$('app-slider').css('display', 'none');
+    $('.content').css('margin-top', '100px');*/
   }
 }
