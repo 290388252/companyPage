@@ -13,7 +13,7 @@ export class MainComponent implements OnInit {
     constructor() {}
 
     ngOnInit() {
-      console.log($(window).height());
+     /* console.log($(window).height());
       const winHeight = $(document).scrollTop();
       console.log(`${scrollY}/${winHeight}`);
       $(window).scroll(() => {
@@ -28,6 +28,6 @@ export class MainComponent implements OnInit {
         } else {
           $('.header-backgroup').addClass('showed');
         }
-      });
+      });*/
     }
 }

@@ -94,9 +94,10 @@
       </div>
     </div>
     <div>
-      <pagination [disabled]="disable" [previousText]="previousText" [nextText]="nextText" [totalItems]="totalNum"
-                  [rotate]="rotate" [maxSize]="5" [itemsPerPage]="pageSize" [(ngModel)]="currentPage"
-                  (pageChanged)="pageChanged($event)"></pagination>
+      <pagination [totalItems]="30"></pagination>
+      <!--<pagination [disabled]="disable" [previousText]="previousText" [nextText]="nextText" [totalItems]="totalNum"-->
+                  <!--[rotate]="rotate" [maxSize]="5" [itemsPerPage]="pageSize" [(ngModel)]="currentPage"-->
+                  <!--(pageChanged)="pageChanged($event)"></pagination>-->
     </div>
   </div>
 </div>

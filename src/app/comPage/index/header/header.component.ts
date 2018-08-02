@@ -12,32 +12,34 @@ import * as $ from 'jquery';
 export class HeaderComponent implements OnInit {
     public userName: string;
     public userImg: string;
+    public isSearch;
     constructor(private translate: TranslateService, public router: Router) {
 
     }
 
     ngOnInit() {
+      this.isSearch = true;
       // console.log('message=' +  sessionStorage.userImg);
       // this.userName = sessionStorage.userName ;
       // this.userImg = 'http://pu.imquanzi.com/' + sessionStorage.userImg ;
       // console.log('message=' +  this.userImg);
-      const winHeight = $(document).scrollTop();
-      console.log(winHeight);
-      $(window).scroll(() => {
-        const scrollY = $(document).scrollTop(); // 获取垂直滚动的距离，即滚动了多少
-        if (scrollY > 150) { // 如果滚动距离大于250px则隐藏，否则删除隐藏类
-          $('.header-title').addClass('hiddened');
-          $('a').addClass('hiddened').removeClass('abtn');
-        } else {
-          $('.header-title').removeClass('hiddened');
-          $('a').addClass('abtn').removeClass('hiddened');
-        }
-        if (scrollY > winHeight) { // 如果没滚动到顶部，删除显示类，否则添加显示类
-          $('.header-title').removeClass('showed');
-        } else {
-          $('.header-title').addClass('showed');
-        }
-      });
+     /* // const winHeight = $(document).scrollTop();
+      // console.log(winHeight);
+      // $(window).scroll(() => {
+      //   const scrollY = $(document).scrollTop(); // 获取垂直滚动的距离，即滚动了多少
+      //   if (scrollY > 150) { // 如果滚动距离大于250px则隐藏，否则删除隐藏类
+      //     $('.header-title').addClass('hiddened');
+      //     $('a').addClass('hiddened').removeClass('abtn');
+      //   } else {
+      //     $('.header-title').removeClass('hiddened');
+      //     $('a').addClass('abtn').removeClass('hiddened');
+      //   }
+      //   if (scrollY > winHeight) { // 如果没滚动到顶部，删除显示类，否则添加显示类
+      //     $('.header-title').removeClass('showed');
+      //   } else {
+      //     $('.header-title').addClass('showed');
+      //   }
+      // });*/
     }
     select(flag) {
       $('li').siblings('li').removeClass('selected');

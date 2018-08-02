@@ -1,10 +1,9 @@
 $topnav-background-color: #F8F8F8;
 .admin-backgroup {
-    //position: absolute;
     font-family:"微软雅黑";
     background-color: $topnav-background-color;
-    border: 2px;
     height: 100%;
+    width: 100%;
 }
 .header-backgroup {
   position:fixed;
@@ -12,22 +11,27 @@ $topnav-background-color: #F8F8F8;
   left:0;
   z-index:1100;
   font-family:'微软雅黑';
-  height: 80px;
+  height: 100px;
   width: 100%;
+  background: #FFFFFF;
+  border-bottom: 1px solid #F8F8F8;
   //border-top:0.5px solid red;
 }
-.content{
+.content-backgroup{
   width: 100%;
+  margin-top: 100px;
   //margin: 800px 0 50px 0;
+}
+.container{
+  width: 1440px !important;
+  margin: 0px auto;
 }
 .slider{
   width: 100%;
 }
 .bottom-backgroup {
-  background-color: #ffffff;
+  background-color: #4cc0e7;
   font-family:"微软雅黑";
-  position:absolute;
-  left:0;
   width: 100%;
 }
 .hiddened{

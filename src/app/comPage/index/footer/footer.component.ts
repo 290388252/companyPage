@@ -16,12 +16,12 @@ export class FooterComponent implements OnInit {
     }
 
     ngOnInit() {
-      $('.footer-backgroup').css('width', window.innerWidth);
+      /*$('.footer-backgroup').css('width', window.innerWidth);
       $('.footer-text').css('width', window.innerWidth);
       Observable.fromEvent(window, 'resize').subscribe((event) => {
         $('.footer-backgroup').css('width', window.innerWidth);
         $('.footer-text').css('width', window.innerWidth);
-      });
+      });*/
     }
 
     loginout(): void {

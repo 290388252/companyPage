@@ -1,19 +1,26 @@
 <div class="header-backgroup">
   <div class="header-log">
-    <img src="assets/comimg/logos.png" width="100px" height="100px" />
+    <img src="assets/comimg/logos.png" width="80px" height="80px" />
   </div>
   <!--<h2 class="header-title">广州优水到家工程</h2>-->
-  <div>
+  <div class="header-title">
     <ul id="menu">
-      <li class="li1" (click)="select(1)" [routerLink]="['first']" [routerLinkActive]="['router-link-active']"><a id="a1" class="abtn btn rounded-btn" [routerLink]="['first']" [routerLinkActive]="['router-link-active']" ><strong>网站首页</strong></a></li>
-      <li class="li2" (click)="select(2)" [routerLink]="['product']" [routerLinkActive]="['router-link-active']"><a id="a2" class="abtn btn rounded-btn" [routerLink]="['product']" [routerLinkActive]="['router-link-active']" ><strong> 关于优水</strong></a></li>
-      <li class="li3" (click)="select(3)" [routerLink]="['operation']" [routerLinkActive]="['router-link-active']"><a id="a3" class="abtn btn rounded-btn" [routerLink]="['cooperation']" [routerLinkActive]="['router-link-active']" ><strong> 运营案例</strong></a></li>
-      <li class="li4" (click)="select(4)" [routerLink]="['newcenter']" [routerLinkActive]="['router-link-active']"><a id="a4" class="abtn btn rounded-btn" [routerLink]="['newcenter']" [routerLinkActive]="['router-link-active']" ><strong> 咨询中心</strong></a></li>
-      <li class="li5" (click)="select(5)" [routerLink]="['cooperation']" [routerLinkActive]="['router-link-active']"><a id="a5" class="abtn btn rounded-btn" [routerLink]="['newcenter']" [routerLinkActive]="['router-link-active']" ><strong> 合作伙伴</strong></a></li>
-      <li class="li6" (click)="select(6)" [routerLink]="['info']" [routerLinkActive]="['router-link-active']"><a id="a6" class="abtn btn rounded-btn" [routerLink]="['info']" [routerLinkActive]="['router-link-active']" ><strong> 联系我们</strong></a></li>
+      <li class="li1 selected" (click)="select(1)" [routerLink]="['first']" [routerLinkActive]="['router-link-active']"><a id="a1" class="abtn btn rounded-btn" [routerLink]="['first']" [routerLinkActive]="['router-link-active']" >网站首页</a></li>
+      <li class="li2" (click)="select(2)" [routerLink]="['product']" [routerLinkActive]="['router-link-active']"><a id="a2" class="abtn btn rounded-btn" [routerLink]="['product']" [routerLinkActive]="['router-link-active']" >关于优水</a></li>
+      <li class="li3" (click)="select(3)" [routerLink]="['operation']" [routerLinkActive]="['router-link-active']"><a id="a3" class="abtn btn rounded-btn" [routerLink]="['cooperation']" [routerLinkActive]="['router-link-active']" >运营案例</a></li>
+      <li class="li4" (click)="select(4)" [routerLink]="['newcenter']" [routerLinkActive]="['router-link-active']"><a id="a4" class="abtn btn rounded-btn" [routerLink]="['newcenter']" [routerLinkActive]="['router-link-active']" >咨询中心</a></li>
+      <li class="li5" (click)="select(5)" [routerLink]="['cooperation']" [routerLinkActive]="['router-link-active']"><a id="a5" class="abtn btn rounded-btn" [routerLink]="['newcenter']" [routerLinkActive]="['router-link-active']" >合作伙伴</a></li>
+      <li class="li6" (click)="select(6)" [routerLink]="['info']" [routerLinkActive]="['router-link-active']"><a id="a6" class="abtn btn rounded-btn" [routerLink]="['info']" [routerLinkActive]="['router-link-active']" >联系我们</a></li>
+      <div class="header-search" (click)="isSearch = !isSearch"><img src="../../../assets/first/u12.png"/></div>
+      <div class="clear_fix"></div>
     </ul>
   </div>
-
-
+  <div class="search" [hidden]="isSearch">
+    <div class="input-group">
+      <input type="text" placeholder="请输入搜索内容" />
+      <button><img src="../../../assets/first/u30.png"/></button>
+      <div class="clear_fix"></div>
+    </div>
+  </div>
 </div>
 

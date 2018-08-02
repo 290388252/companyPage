@@ -18,11 +18,17 @@ import * as $ from 'jquery';
 })
 
 export class FirstComponent implements OnInit {
+   public currentPic = 0;
   constructor(private translate: TranslateService, public router: Router, private http: HttpClient,
               private appProperties: AppProperties, private appService: AppService) {
   }
   ngOnInit() {
-    $('app-slider').css('display', '');
-    $('.content').css('margin-top', '0').css('height', '450');
+    setInterval(() => {
+      const num = (this.currentPic + 1) % 2;
+      this.currentPic = num;
+    }, 3000);
+  }
+  changebanner(i){
+    this.currentPic = i;
   }
 }
