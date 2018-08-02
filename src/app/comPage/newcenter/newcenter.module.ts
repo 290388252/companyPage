@@ -9,6 +9,7 @@ import {AppService} from '../../app-service';
 import {AppProperties} from '../../app.properties';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { PaginationModule } from 'ngx-bootstrap/pagination';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 @NgModule({
   imports: [
     CommonModule,
@@ -17,6 +18,7 @@ import { PaginationModule } from 'ngx-bootstrap/pagination';
     FormsModule,
     PaginationModule.forRoot(),
     NgbDropdownModule.forRoot(),
+    NgbModule.forRoot(),
     ReactiveFormsModule
   ],
   providers: [AppService, AppProperties],
