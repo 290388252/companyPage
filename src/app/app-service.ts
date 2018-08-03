@@ -17,8 +17,7 @@ export class AppService {
     getData(url: string, options?: any, myheaders?: any | null): Observable<any> {
         // 配置请求头
         const myHeaders: HttpHeaders = new HttpHeaders({
-          'Content-Type': 'application/json',
-          'token': sessionStorage.getItem('token')
+          'Content-Type': 'application/json'
         });
         // tslint:disable-next-line:forin
         for (const key in myheaders) {
@@ -37,8 +36,7 @@ export class AppService {
      */
     postData(url: string, options: any, tokens?: any | null): Observable<any> {
         const myHttpHead = { headers: new HttpHeaders({
-            'Content-Type': 'application/json',
-            'token': sessionStorage.getItem('token')
+            'Content-Type': 'application/json'
             // 'token': tokens
         })};
         /* const myHeaders: HttpHeaders = new HttpHeaders();
