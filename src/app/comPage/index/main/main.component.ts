@@ -10,9 +10,23 @@ import * as $ from 'jquery';
     animations: [routerTransition()]
 })
 export class MainComponent implements OnInit {
+  public hidden: boolean;
     constructor() {}
 
     ngOnInit() {
+      const _this = this;
+      if (window.outerWidth < 986) {
+        _this.hidden = true;
+      } else {
+        _this.hidden = false;
+      }
+      window.addEventListener('resize', function() {
+        if (window.outerWidth < 986) {
+          _this.hidden = true;
+        } else {
+          _this.hidden = false;
+        }
+      }, false);
      /* console.log($(window).height());
       const winHeight = $(document).scrollTop();
       console.log(`${scrollY}/${winHeight}`);

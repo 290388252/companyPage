@@ -13,12 +13,30 @@ export class HeaderComponent implements OnInit {
     public userName: string;
     public userImg: string;
     public isSearch;
+    public hidden: boolean;
+    public open = true;
     constructor(private translate: TranslateService, public router: Router) {
 
     }
 
     ngOnInit() {
+      console.log(window.outerWidth);
+      const _this = this;
+      if (window.outerWidth < 746) {
+        _this.hidden = true;
+      } else {
+        _this.hidden = false;
+        document.getElementById('header-backgroup').style.height = '100px';
+      }
       this.isSearch = true;
+      window.addEventListener('resize', function() {
+        if (window.outerWidth < 746) {
+          _this.hidden = true;
+        } else {
+          _this.hidden = false;
+          document.getElementById('header-backgroup').style.height = '100px';
+        }
+      }, false);
       // console.log('message=' +  sessionStorage.userImg);
       // this.userName = sessionStorage.userName ;
       // this.userImg = 'http://pu.imquanzi.com/' + sessionStorage.userImg ;
@@ -47,5 +65,18 @@ export class HeaderComponent implements OnInit {
       // $('a').siblings('a').removeClass('selecteda');
       // $(`#a${flag}`).addClass('selecteda');
     }
-
+    selectCol(flag) {
+      document.getElementById('header-backgroup').style.height = '100px';
+      this.open = true;
+      $('li').siblings('li').removeClass('selected-col-s');
+      $(`.li${flag}`).addClass('selected-col-s');
+    }
+    toggle() {
+      this.open = !this.open;
+      if (!this.open) {
+        document.getElementById('header-backgroup').style.height = '320px';
+      } else {
+        document.getElementById('header-backgroup').style.height = '100px';
+      }
+    }
 }

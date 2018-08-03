@@ -16,6 +16,9 @@
   text-align: center;
   margin-top: -13px;*/
 }
+.button-log{
+  margin:30px 10px 10px;
+}
 .header-title {
   /*position: absolute;
   top: 55px;
@@ -39,6 +42,13 @@
   padding:0;
   margin:0;
 }*/
+#menu-col li{
+  list-style: none;
+  width: 120px;
+  height: 30px;
+  margin-top: 10px;
+  text-align: center;
+}
 #menu li {
   list-style: none;
   float: left;
@@ -72,6 +82,10 @@
 .clear_fix{
   clear: both;
 }
+.selected-col-s {
+  outline:none;
+  cursor: pointer;
+}
 .selected {
   outline:none;
   cursor: pointer;
@@ -80,7 +94,7 @@
 .input-group input {
   padding-left: 10px;
   height: 30px;
-  margin: 0px;
+  margin: 0;
   border: none;
   float: left;
   border-top-left-radius: 5px;

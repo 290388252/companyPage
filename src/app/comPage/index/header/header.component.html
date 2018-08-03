@@ -1,23 +1,66 @@
-<div class="header-backgroup">
-  <div class="header-log">
-    <img src="assets/comimg/logos.png" width="80px" height="80px" />
+<div id="header-backgroup" class="header-backgroup">
+  <div class="header-log" [hidden]="hidden">
+    <img src="assets/comimg/logos.png" width="80px" height="80px"/>
   </div>
   <!--<h2 class="header-title">广州优水到家工程</h2>-->
-  <div class="header-title">
+  <div class="button-log" [hidden]="!hidden" (click)="toggle()">
+    <button style="background: none;border: none;margin-left: 20px">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30" height="30" focusable="false">
+        <path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10"
+              d="M4 7h22M4 15h22M4 23h22"></path>
+      </svg>
+    </button>
+  </div>
+  <div [hidden]="!hidden">
+    <ul id="menu-col" [hidden]="open">
+      <li class="li11 selected-col-s" (click)="selectCol(11)" [routerLink]="['first']"
+          [routerLinkActive]="['router-link-active']"><a class="abtn btn rounded-btn" [routerLink]="['first']"
+                                                         [routerLinkActive]="['router-link-active']">网站首页</a></li>
+      <li class="li22" (click)="selectCol(22)" [routerLink]="['product']" [routerLinkActive]="['router-link-active']"><a
+        class="abtn btn rounded-btn" [routerLink]="['product']" [routerLinkActive]="['router-link-active']">关于优水</a>
+      </li>
+      <li class="li33" (click)="selectCol(33)" [routerLink]="['operation']" [routerLinkActive]="['router-link-active']">
+        <a class="abtn btn rounded-btn" [routerLink]="['cooperation']"
+           [routerLinkActive]="['router-link-active']">运营案例</a></li>
+      <li class="li44" (click)="selectCol(44)" [routerLink]="['newcenter']" [routerLinkActive]="['router-link-active']">
+        <a class="abtn btn rounded-btn" [routerLink]="['newcenter']"
+           [routerLinkActive]="['router-link-active']">咨询中心</a></li>
+      <li class="li55" (click)="selectCol(55)" [routerLink]="['cooperation']"
+          [routerLinkActive]="['router-link-active']"><a class="abtn btn rounded-btn" [routerLink]="['newcenter']"
+                                                         [routerLinkActive]="['router-link-active']">合作伙伴</a></li>
+      <li class="li66" (click)="selectCol(66)" [routerLink]="['info']" [routerLinkActive]="['router-link-active']"><a
+        class="abtn btn rounded-btn" [routerLink]="['info']" [routerLinkActive]="['router-link-active']">联系我们</a></li>
+    </ul>
+  </div>
+  <div class="header-title" [hidden]="hidden">
     <ul id="menu">
-      <li class="li1 selected" (click)="select(1)" [routerLink]="['first']" [routerLinkActive]="['router-link-active']"><a id="a1" class="abtn btn rounded-btn" [routerLink]="['first']" [routerLinkActive]="['router-link-active']" >网站首页</a></li>
-      <li class="li2" (click)="select(2)" [routerLink]="['product']" [routerLinkActive]="['router-link-active']"><a id="a2" class="abtn btn rounded-btn" [routerLink]="['product']" [routerLinkActive]="['router-link-active']" >关于优水</a></li>
-      <li class="li3" (click)="select(3)" [routerLink]="['operation']" [routerLinkActive]="['router-link-active']"><a id="a3" class="abtn btn rounded-btn" [routerLink]="['cooperation']" [routerLinkActive]="['router-link-active']" >运营案例</a></li>
-      <li class="li4" (click)="select(4)" [routerLink]="['newcenter']" [routerLinkActive]="['router-link-active']"><a id="a4" class="abtn btn rounded-btn" [routerLink]="['newcenter']" [routerLinkActive]="['router-link-active']" >咨询中心</a></li>
-      <li class="li5" (click)="select(5)" [routerLink]="['cooperation']" [routerLinkActive]="['router-link-active']"><a id="a5" class="abtn btn rounded-btn" [routerLink]="['newcenter']" [routerLinkActive]="['router-link-active']" >合作伙伴</a></li>
-      <li class="li6" (click)="select(6)" [routerLink]="['info']" [routerLinkActive]="['router-link-active']"><a id="a6" class="abtn btn rounded-btn" [routerLink]="['info']" [routerLinkActive]="['router-link-active']" >联系我们</a></li>
+      <li class="li1 selected" (click)="select(1)" [routerLink]="['first']" [routerLinkActive]="['router-link-active']">
+        <a id="a1" class="abtn btn rounded-btn" [routerLink]="['first']" [routerLinkActive]="['router-link-active']">网站首页</a>
+      </li>
+      <li class="li2" (click)="select(2)" [routerLink]="['product']" [routerLinkActive]="['router-link-active']"><a
+        id="a2" class="abtn btn rounded-btn" [routerLink]="['product']"
+        [routerLinkActive]="['router-link-active']">关于优水</a></li>
+      <li class="li3" (click)="select(3)" [routerLink]="['operation']" [routerLinkActive]="['router-link-active']"><a
+        id="a3" class="abtn btn rounded-btn" [routerLink]="['cooperation']" [routerLinkActive]="['router-link-active']">运营案例</a>
+      </li>
+      <li class="li4" (click)="select(4)" [routerLink]="['newcenter']" [routerLinkActive]="['router-link-active']"><a
+        id="a4" class="abtn btn rounded-btn" [routerLink]="['newcenter']" [routerLinkActive]="['router-link-active']">咨询中心</a>
+      </li>
+      <li class="li5" (click)="select(5)" [routerLink]="['cooperation']" [routerLinkActive]="['router-link-active']"><a
+        id="a5" class="abtn btn rounded-btn" [routerLink]="['newcenter']" [routerLinkActive]="['router-link-active']">合作伙伴</a>
+      </li>
+      <li class="li6" (click)="select(6)" [routerLink]="['info']" [routerLinkActive]="['router-link-active']"><a id="a6"
+                                                                                                                 class="abtn btn rounded-btn"
+                                                                                                                 [routerLink]="['info']"
+                                                                                                                 [routerLinkActive]="['router-link-active']">联系我们</a>
+      </li>
       <div class="header-search" (click)="isSearch = !isSearch"><img src="../../../assets/first/u12.png"/></div>
       <div class="clear_fix"></div>
     </ul>
   </div>
   <div class="search" [hidden]="isSearch">
     <div class="input-group">
-      <input type="text" placeholder="请输入搜索内容" />
+      <input type="text" placeholder="请输入搜索内容"/>
       <button><img src="../../../assets/first/u30.png"/></button>
       <div class="clear_fix"></div>
     </div>
