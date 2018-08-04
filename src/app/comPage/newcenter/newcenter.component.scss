@@ -1,7 +1,161 @@
 * {
-  margin:0;
-  padding:0;
+  margin: 0;
+  padding: 0;
 }
+@media (min-width: 1280px) {
+  .newcont {
+    width: 100%;
+    max-width: 1280px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .newcont_in {
+    width: 400px;
+    height: 496px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    //margin: 10px;
+  }
+  .newcont_in_img{
+    width: 100%;
+    height: 240px;
+  }
+  .newcontText {
+    width: 400px;
+    height: 256px;
+    padding: 0 10px;
+    margin-top: -16px;
+    text-align: left;
+
+  }
+}
+/* 大屏幕（大桌面显示器，大于等于 1100px） */
+@media (min-width: 993px) and (max-width: 1279px) {
+  .newcont {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .newcont_in {
+    width: 300px;
+    height: 496px;
+    //margin-bottom: 60px;
+    overflow: hidden;
+    margin: 10px;
+  }
+  .newcont_in_img{
+    width: 100%;
+    height: 180px;
+  }
+  .newcontText {
+    width: 300px;
+    height: 256px;
+    padding: 0 10px;
+    margin-top: -16px;
+    text-align: left;
+  }
+  .newcontText h1{
+    font-size: 28px;
+  }
+}
+
+/* 中等屏幕（桌面显示器，大于等于 992px） */
+@media (min-width: 769px) and (max-width: 992px) {
+  .newcont {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .newcont_in {
+    width: 250px;
+    height: 496px;
+    //margin-bottom: 60px;
+    overflow: hidden;
+    margin-bottom: 10px;
+  }
+  .newcont_in_img{
+    width: 100%;
+    height: 150px;
+  }
+  .newcontText {
+    width: 100%;
+    padding: 0 10px;
+    margin-top: -16px;
+    text-align: left;
+  }
+  .newcontText h1{
+    font-size: 24px;
+    margin-top: 24px;
+  }
+}
+
+
+
+/* 小屏幕（平板，大于等于 768px） */
+@media (max-width: 768px) and (min-width: 500px) {
+  .newcont {
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .newcont_in {
+    width: 200px;
+    height: 496px;
+    //margin-bottom: 60px;
+    overflow: hidden;
+    margin-bottom: 10px;
+  }
+  .newcont_in_img{
+    width: 100%;
+    height: 140px;
+  }
+  .newcontText {
+    width: 200px;
+    padding: 0 10px;
+    margin-top: -16px;
+    text-align: left;
+  }
+  .newcontText h1{
+    font-size: 24px;
+    margin-top: 24px;
+  }
+}
+/* 小屏幕（平板，大于等于 768px） */
+@media (max-width: 500px) {
+  .newcont {
+    width: 320px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .newcont_in {
+    width: 320px;
+    max-height: 496px;
+    //margin-bottom: 60px;
+    overflow: hidden;
+    margin-bottom: 10px;
+  }
+  .newcont_in_img{
+    width: 100%;
+    height: 192px;
+  }
+  .newcontText {
+    width: 320px;
+    padding: 0 10px;
+    margin-top: -16px;
+    text-align: left;
+  }
+  .newcontText h1{
+    font-size: 24px;
+    margin-top: 24px;
+  }
+}
+
 .content {
   display: inline;
   //margin: 0 auto;
@@ -9,14 +163,17 @@
   //height: 680px;
   //display: table;
 }
-.selected{
+
+.selected {
   position: absolute;
   width: 440px;
   left: 200px;
 }
+
 .live {
   overflow: hidden;
 }
+
 .live > li {
   list-style: none;
   position: relative;
@@ -25,6 +182,7 @@
   -webkit-transition: .12s;
   transition: .12s;
 }
+
 .live > li::before {
   position: absolute;
   content: '\2022';
@@ -38,13 +196,16 @@
   -webkit-transition: .5s;
   transition: .5s;
 }
+
 .live > li:hover {
   color: red;
   cursor: pointer;
 }
+
 .selectes {
   color: red;
 }
+
 .live > li:hover::before {
   -webkit-transform: scale(2);
   -ms-transform: scale(2);
@@ -55,13 +216,13 @@
   transition: .1s;
 }
 
-
 @font-face {
   font-family: 'Roboto Condensed';
   font-style: normal;
   font-weight: 400;
   src: local("Roboto Condensed Regular"), local("RobotoCondensed-Regular"), url(http://themes.googleusercontent.com/static/fonts/robotocondensed/v7/Zd2E9abXLFGSr9G3YK2MsFzqCfRpIA3W6ypxnPISCPA.woff) format("woff");
 }
+
 html {
   height: 100%;
 }
@@ -78,7 +239,7 @@ body {
 h1 {
   margin: .5em 0 0;
   padding: 0;
-  text-shadow: 0 4px rgba(0, 0, 0, 0.2);
+  //text-shadow: 0 4px rgba(0, 0, 0, 0.2);
 }
 
 * {

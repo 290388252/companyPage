@@ -14,7 +14,7 @@
   </div>
   <div class="companyInfo">
     <div class="left">
-      <img src="../../../assets/first/ours.jpg" width="600" height="300"/>
+      <img src="../../../assets/first/ours.jpg" />
     </div>
     <div class="right">
       <div class="companyInfo_title"><h1>关于优水到家</h1></div>
@@ -31,15 +31,16 @@
     <div class="textImg_title"><h2>最新要闻</h2></div>
     <div class="textImg_content">
       <ul>
-        <li>
-          <img src="../../../assets/first/news_01.jpg"/>
-          <h3>标题</h3>
-          <span>2018-8-01</span>
-          <p class="mult_line_ellipsis">广州市优水到家工程科技有限公司，是一家总部位于广州的科技公司，
-            致力于无人零售，饮用水售卖领域，为市场提供综合性的饮用水无人售卖的解决方案。优水工程在全国多地建立起了由自营、核心代理商
-            组成的销售服务网络，已完成上千个点位的无人售卖项目。</p>
+        <li *ngFor="let item of articleList">
+          <!--<img src="../../../assets/first/news_01.jpg"/>-->
+          <img [src]="imgUrl + item.url" />
+          <h3>{{item.title}}</h3>
+          <span>{{item.createTime}}</span>
+          <p class="mult_line_ellipsis">
+            {{item.content}}
+          </p>
         </li>
-        <li>
+        <!--<li>
           <img src="../../../assets/first/news_02.jpg"/>
           <h3>标题</h3>
           <span>2018-8-01</span>
@@ -54,7 +55,7 @@
           <p class="mult_line_ellipsis">广州市优水到家工程科技有限公司，是一家总部位于广州的科技公司，
             致力于无人零售，饮用水售卖领域，为市场提供综合性的饮用水无人售卖的解决方案。优水工程在全国多地建立起了由自营、核心代理商
             组成的销售服务网络，已完成上千个点位的无人售卖项目。</p>
-        </li>
+        </li>-->
         <div class="clear-fix"></div>
       </ul>
     </div>
@@ -64,15 +65,16 @@
     <div class="textImg_title"><h2>合作案例</h2></div>
     <div class="textImg_content">
       <ul>
-        <li>
-          <img src="../../../assets/first/cares_01.jpg"/>
-          <h3>标题</h3>
-          <span>2018-8-01</span>
-          <p class="mult_line_ellipsis">广州市优水到家工程科技有限公司，是一家总部位于广州的科技公司，
-            致力于无人零售，饮用水售卖领域，为市场提供综合性的饮用水无人售卖的解决方案。优水工程在全国多地建立起了由自营、核心代理商
-            组成的销售服务网络，已完成上千个点位的无人售卖项目。</p>
+        <li *ngFor="let item of articleList1">
+          <!--<img src="../../../assets/first/news_01.jpg"/>-->
+          <img [src]="imgUrl + item.url" />
+          <h3>{{item.title}}</h3>
+          <span>{{item.createTime}}</span>
+          <p class="mult_line_ellipsis">
+            {{item.content}}
+          </p>
         </li>
-        <li>
+        <!--<li>
           <img src="../../../assets/first/cares_02.jpg"/>
           <h3>标题</h3>
           <span>2018-8-01</span>
@@ -87,7 +89,7 @@
           <p class="mult_line_ellipsis">广州市优水到家工程科技有限公司，是一家总部位于广州的科技公司，
             致力于无人零售，饮用水售卖领域，为市场提供综合性的饮用水无人售卖的解决方案。优水工程在全国多地建立起了由自营、核心代理商
             组成的销售服务网络，已完成上千个点位的无人售卖项目。</p>
-        </li>
+        </li>-->
         <div class="clear-fix"></div>
       </ul>
     </div>
