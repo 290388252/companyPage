@@ -13,7 +13,7 @@ import * as $ from 'jquery';
 @Component({
   selector: 'app-newcenterpage',
   templateUrl: './newcenter.component.html',
-  styleUrls: ['./newcenter.component.scss'],
+  styleUrls: ['./newcenter.component.scss', '../animate/animate.min.css'],
   animations: [routerTransition()]
 })
 

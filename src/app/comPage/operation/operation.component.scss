@@ -352,7 +352,23 @@
     resize: none;
   }
 }
+.cont_img:hover {
+  box-shadow: -5px 5px 14px 3px rgba(130, 130, 130, 1);
+  //box-shadow: -5px 5px 15px 1px rgba(130, 130, 130, 1);
+}
+.cont_img2:hover {
+  box-shadow: -5px 5px 14px 3px rgba(130, 130, 130, 1);
 
+  //box-shadow: 0 0 0 10px rgba(255,255,255,.25);
+}
+.cont_bt div:hover {
+  box-shadow: -5px 5px 14px 3px rgba(130, 130, 130, 1);
+
+  //box-shadow: 0 0 0 10px rgba(255,255,255,.25);
+}
+.hoverShadow:hover {
+  box-shadow: -5px 5px 14px 3px rgba(130, 130, 130, 1);
+}
 .content {
   display: inline;
   //margin: 0 auto;

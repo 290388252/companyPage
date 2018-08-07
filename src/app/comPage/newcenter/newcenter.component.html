@@ -13,7 +13,7 @@
     <div class="newcont">
       <!--1-->
       <div class="newcont_in" *ngFor="let item of initList">
-        <img [src]=imgPath+item.url style="width: 100%;max-height: 240px;" class="newcont_in_img">
+        <img [src]=imgPath+item.url style="width: 100%;max-height: 240px;" class="newcont_in_img animated rubberBand" >
         <div class="newcontText">
           <h1>{{item.title}}</h1>
           <p style="margin: 4px 0;">{{item.createTime}}</p>
