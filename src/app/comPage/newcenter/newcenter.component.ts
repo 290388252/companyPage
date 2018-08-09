@@ -60,7 +60,7 @@ export class NewcenterComponent implements OnInit {
   }
 // 初始化数据
   getData() {
-    this.appService.postData(this.initUrl, {'sid': 1, 'pageSize': 9}).subscribe(
+    this.appService.postData(this.initUrl, {'sid': 9, 'pageSize': 9}).subscribe(
       data => {
         console.log(data);
         if (data.status === 1) {
@@ -84,7 +84,7 @@ export class NewcenterComponent implements OnInit {
   pageChanged(event: any): void {
     this.disable = true;
     // this.newcenterForm.currentPage = event.page;
-    this.appService.postData(this.initUrl, {'sid': 1, 'pageSize': 9, 'currentPage': event.page}).subscribe(
+    this.appService.postData(this.initUrl, {'sid': 9, 'pageSize': 9, 'currentPage': event.page}).subscribe(
       data => {
         console.log(data);
         if (data.status === 1) {

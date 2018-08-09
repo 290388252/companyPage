@@ -1,4 +1,4 @@
-<div class="container">
+<div class="containers">
   <div class="banner">
     <ul class="banner_img">
       <li [hidden]="currentPic !== 0"><img src="../../../assets/first/banner_01.jpg"/></li>
@@ -23,7 +23,7 @@
           致力于无人零售，饮用水售卖领域，为市场提供综合性的饮用水无人售卖的解决方案。优水工程在全国多地建立起了由自营、核心代理商
           组成的销售服务网络，已完成上千个点位的无人售卖项目。</p>
       </div>
-      <button>查看更多>></button>
+      <button (click)="toProduct()">查看更多>></button>
     </div>
     <div class="clear-fix"></div>
   </div>
@@ -37,7 +37,7 @@
           <h3>{{item.title}}</h3>
           <span>{{item.createTime}}</span>
           <p class="mult_line_ellipsis">
-            {{item.content}}
+            {{item.remark}}
           </p>
         </li>
         <!--<li>
@@ -71,7 +71,7 @@
           <h3>{{item.title}}</h3>
           <span>{{item.createTime}}</span>
           <p class="mult_line_ellipsis">
-            {{item.content}}
+            {{item.remark}}
           </p>
         </li>
         <!--<li>

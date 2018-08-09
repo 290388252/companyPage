@@ -49,7 +49,7 @@
   border-radius: 5px;
   text-align: center;
 }
-.container{
+.containers{
   width: 1440px;
   margin: 0px auto;
   color: #333333;
@@ -95,7 +95,7 @@
   padding: 0px 20px;
 }
 .textImg_title {
-  width: 150px;
+  width: 200px;
   margin: 30px auto;
   padding: 10px 0;
   text-align: center;
@@ -159,7 +159,7 @@ button:hover{
 }
 
 @media screen and (max-width: 1439px) {
-  .container{
+  .containers{
     width: 100%;
   }
   .left {
@@ -184,7 +184,7 @@ button:hover{
   }
 }
 @media screen and (max-width: 998px) {
-  .container{
+  .containers{
     width: 100%;
   }
   .left {
@@ -209,7 +209,7 @@ button:hover{
   }
 }
 @media screen and (max-width: 699px) {
-  .container{
+  .containers{
     width: 100%;
   }
   .left {
@@ -232,7 +232,7 @@ button:hover{
   }
 }
 @media screen and (max-width: 499px) {
-  .container{
+  .containers{
     width: 100%;
   }
   .left {
