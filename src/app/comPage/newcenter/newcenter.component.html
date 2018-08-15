@@ -5,6 +5,7 @@
       <img src="../../../assets/newcenter/newcenter_01.jpg" style="width: 100%;">
     </div>
     <!---->
+
     <div style="width: 212px;height: 170px;height: 66px;margin-top: 30px;border-bottom: 1px solid #666666;
     border-top: 1px solid #666666;line-height: 66px;font-size: 30px;letter-spacing: 4px;text-align: center;">
       资讯中心
@@ -13,12 +14,18 @@
     <div class="newcont">
       <!--1-->
       <div class="newcont_in" *ngFor="let item of initList">
-        <img [src]=imgPath+item.url style="width: 100%;max-height: 240px;" class="newcont_in_img animated rubberBand" >
+        <a [routerLink]="['../../articleDetails']" [queryParams]="{id: item.id}">
+          <div class="outimg">
+            <img [src]=imgPath+item.url class="newcont_in_img">
+            <!--<img [src]=imgPath+item.url style="width: 100%;max-height: 240px;" class="animated rubberBand newcont_in_img">-->
+          </div>
+
         <div class="newcontText">
-          <h1>{{item.title}}</h1>
-          <p style="margin: 4px 0;">{{item.createTime}}</p>
-          <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{item.remark}}</p>
+          <h1 style="color: #333333">{{item.title}}</h1>
+          <p style="margin: 4px 0;color: #666666">{{item.createTime}}</p>
+          <p style="color: #666666">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{item.remark}}</p>
         </div>
+        </a>
       </div>
 
     </div>

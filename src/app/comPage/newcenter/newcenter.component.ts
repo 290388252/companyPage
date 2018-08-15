@@ -9,6 +9,7 @@ import {AppService} from '../../app-service';
 import {NewcenterForm} from './newcenter.form';
 import * as $ from 'jquery';
 
+
 // import {Cooperation} from "./cooperation.form";
 @Component({
   selector: 'app-newcenterpage',
@@ -37,7 +38,6 @@ export class NewcenterComponent implements OnInit {
   public totalNum: number;
   public pageSize: number;
 
-
   constructor(private translate: TranslateService, public router: Router, private http: HttpClient,
               private appProperties: AppProperties, private appService: AppService) {
     this.initUrl = this.appProperties.getUrl() + '/officialArticle/officialList';
@@ -51,6 +51,7 @@ export class NewcenterComponent implements OnInit {
     this.nextText = '下一页';
     this.previousText = '上一页';
     this.rotate = true;
+
     this.getData();
   }
 

@@ -56,17 +56,17 @@ export class AppService {
         })};
       return this.http.post(url, options, myHttpHead);
     }
-    postFormData(url: string, body: any, tokens?: any | null): Observable<any> {
+    postFormData(url: string, body: any): Observable<any> {
       const form = new FormData();
-      const myHttpHead = { headers: new HttpHeaders({
-          // 'Content-Type': 'formdata',
-          // 'Content-Type': 'multipart/form-data',
-          'token': sessionStorage.getItem('token')
-        })};
+      // const myHttpHead = { headers: new HttpHeaders({
+      //     // 'Content-Type': 'formdata',
+      //     // 'Content-Type': 'multipart/form-data',
+      //     'token': sessionStorage.getItem('token')
+      //   })};
       for (const k in body) {
         form.append(k, body[k]);
       }
-      return this.http.post(url, form, myHttpHead);
+      return this.http.post(url, form);
     }
     postDataDownLoad(url: string, body: any): Observable<any> {
       return this.http.post(url, body, {responseType: 'arraybuffer', headers: {'token': sessionStorage.getItem('token')}});
