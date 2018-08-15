@@ -1,0 +1,25 @@
+tr {
+  white-space: nowrap;
+  text-align: center;
+  width: 200px;
+  height: 30px;
+}
+
+th {
+  vertical-align: middle;
+  text-align: center;
+  width: 130px;
+  height: 30px;
+}
+
+.table > tbody > tr > td {
+  vertical-align: middle;
+  text-align: center;
+}
+
+.cont {
+  max-width: 1283px;
+  margin: 0 auto;
+  padding: 30px;
+  //background: wheat;
+}

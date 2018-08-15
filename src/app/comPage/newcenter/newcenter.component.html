@@ -6,11 +6,11 @@
     </div>
     <!---->
 
-    <div style="width: 212px;height: 170px;height: 66px;margin-top: 30px;border-bottom: 1px solid #666666;
-    border-top: 1px solid #666666;line-height: 66px;font-size: 30px;letter-spacing: 4px;text-align: center;">
+    <div style="width: 212px;height: 170px;height: 66px;margin-top: 30px;border-bottom: 2px solid #0099FF;
+    border-top: 2px solid #0099FF;line-height: 66px;font-size: 30px;letter-spacing: 4px;text-align: center;color: #0099FF">
       资讯中心
     </div>
-    <p style="width: 212px;text-align: center;margin-top: 20px;margin-bottom: 10px;">News Center</p>
+    <p style="width: 212px;text-align: center;margin-top: 20px;margin-bottom: 10px;color: #0099FF">News Center</p>
     <div class="newcont">
       <!--1-->
       <div class="newcont_in" *ngFor="let item of initList">
@@ -21,7 +21,7 @@
           </div>
 
         <div class="newcontText">
-          <h1 style="color: #333333">{{item.title}}</h1>
+          <h1 style="color: #0099FF">{{item.title}}</h1>
           <p style="margin: 4px 0;color: #666666">{{item.createTime}}</p>
           <p style="color: #666666">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{item.remark}}</p>
         </div>
