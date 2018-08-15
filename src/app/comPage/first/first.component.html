@@ -34,7 +34,7 @@
         <li *ngFor="let item of articleList">
           <!--<img src="../../../assets/first/news_01.jpg"/>-->
           <img [src]="imgUrl + item.url" />
-          <h3>{{item.title}}</h3>
+          <h3 style="color: #0099FF">{{item.title}}</h3>
           <span>{{item.createTime}}</span>
           <p class="mult_line_ellipsis">
             {{item.remark}}
@@ -68,7 +68,7 @@
         <li *ngFor="let item of articleList1">
           <!--<img src="../../../assets/first/news_01.jpg"/>-->
           <img [src]="imgUrl + item.url" />
-          <h3>{{item.title}}</h3>
+          <h3 style="color: #0099FF">{{item.title}}</h3>
           <span>{{item.createTime}}</span>
           <p class="mult_line_ellipsis">
             {{item.remark}}
