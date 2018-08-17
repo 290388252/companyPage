@@ -51,8 +51,8 @@
     </div>
 
     <!--<div-->
-      <!--style="width: 140px;height: 40px;border: 1px solid #666666;border-radius: 3px;line-height: 40px;text-align: center;" class="hoverShadow">-->
-      <!--查看更多-->
+    <!--style="width: 140px;height: 40px;border: 1px solid #666666;border-radius: 3px;line-height: 40px;text-align: center;" class="hoverShadow">-->
+    <!--查看更多-->
     <!--</div>-->
     <!--更多合作-->
     <div class="cont_more">更多合作
@@ -75,34 +75,37 @@
     </div>
     <p style="width: 212px;text-align: center;margin-top: 20px;margin-bottom: 30px;color: #0099FF;">Contact Us</p>
     <!--富文本-->
-    <div class="rich_text">
+  </div>
+  <div class="rich_text">
+    <div class="rich_text_all">
       <div class="rich_text_top">
-        您的姓名(必填)<span style="color: red">*</span>:
+        <div>您的姓名(必填)<span style="color: red">*</span>:</div>
         <input type="text" style="width: 176px;height: 26px;" [(ngModel)]="userName" name="userName">
       </div>
       <div class="rich_text_top">
-        您的邮箱(必填)<span style="color: red">*</span>:
+        <div>您的邮箱(必填)<span style="color: red">*</span>:</div>
         <input type="text" style="width: 176px;height: 26px;" [(ngModel)]="userEmail" name="userEmail">
       </div>
       <div class="rich_text_top">
-        您的手机(必填)<span style="color: red">*</span>:
+        <div>您的手机(必填)<span style="color: red">*</span>:</div>
         <input type="text" style="width: 176px;height: 26px;" [(ngModel)]="userPhone" name="userPhone">
       </div>
-      <div class="rich_text_bt">
-        <div class="rich_text_bt_head">内容:</div>
-        <!--富文本框-->
-        <textarea name="txt" cols="50" rows="5" class="rich_textarea"
-                  [(ngModel)]="userContent" name="userContent"></textarea>
-        <!--<textarea name="txt" clos=",50" rows="5" warp="virtual"></textarea>-->
-        <div style="width: 100%;">
-          <div (click)="leaveMessage()"
-               style="width: 144px;height: 28px;border: 1px solid #333;background: #F8F8F8;line-height: 28px;text-align: center;margin: auto;"
-               class="hoverShadow">
-            提交
-          </div>
+    </div>
+
+    <div class="rich_text_all">
+      <div class="rich_text_bt_head">内容:</div>
+      <!--富文本框-->
+      <textarea name="txt" cols="50" rows="5" class="rich_textarea" style="width: 320px;"
+                [(ngModel)]="userContent" name="userContent"></textarea>
+      <!--<textarea name="txt" clos=",50" rows="5" warp="virtual"></textarea>-->
+      <div style="width: 100%;">
+        <div (click)="leaveMessage()"
+             style="width: 144px;height: 28px;background: #4cc0e7;line-height: 28px;text-align: center;color:white;margin: auto;"
+             class="hoverShadow">
+          提交
         </div>
       </div>
-
     </div>
+
   </div>
 </div>
