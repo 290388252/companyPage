@@ -310,9 +310,9 @@
     height: 170px;
     height: 66px;
     margin-top: 60px;
-    border-bottom: 2px solid #0099FF;
-    border-top: 2px solid #0099FF;
-    color: #0099FF;
+    border-bottom: 2px solid #4DC0E8;
+    border-top: 2px solid #4DC0E8;
+    color: #4DC0E8;
     line-height: 66px;
     font-size: 30px;
     letter-spacing: 4px;
@@ -411,4 +411,10 @@
 .animated {
   animate-duration: 4s; //动画持续时间
   animate-delay: 4s;
+}
+input:focus {
+  outline-color: #4DC0E8;
+}
+textarea:focus {
+  outline-color: #4DC0E8;
 }

@@ -6,11 +6,11 @@
     </div>
     <!---->
 
-    <div style="width: 212px;height: 170px;height: 66px;margin-top: 30px;border-bottom: 2px solid #0099FF;
-    border-top: 2px solid #0099FF;line-height: 66px;font-size: 30px;letter-spacing: 4px;text-align: center;color: #0099FF">
+    <div style="width: 212px;height: 170px;height: 66px;margin-top: 30px;border-bottom: 2px solid #4DC0E8;
+    border-top: 2px solid #4DC0E8;line-height: 66px;font-size: 30px;letter-spacing: 4px;text-align: center;color: #4DC0E8">
       资讯中心
     </div>
-    <p style="width: 212px;text-align: center;margin-top: 20px;margin-bottom: 10px;color: #0099FF">News Center</p>
+    <p style="width: 212px;text-align: center;margin-top: 5px;margin-bottom: 10px;color: #4DC0E8">NEWS CENTER</p>
     <div class="newcont">
       <!--1-->
       <div class="newcont_in" *ngFor="let item of initList">
@@ -21,10 +21,10 @@
           </div>
 
         <div class="newcontText">
-          <h1 style="color: #0099FF;padding: 10px;">{{item.title}}</h1>
-          <div style="width: 100%;height: 1px;background: gray"></div>
+          <h4 style="color: #4DC0E8;padding:30px 10px 10px 10px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;width: 279px;">{{item.title}}</h4>
+          <div style="width: 100%;height: 1px;background: #dadada"></div>
           <!--<p style="margin: 4px 0;color: #666666">{{item.createTime}}</p>-->
-          <p style="color: #666666;display: -webkit-box;-webkit-line-clamp: 5;-webkit-box-orient: vertical;overflow: hidden;line-height: 35px;padding: 10px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{item.content}}</p>
+          <p style="color: #7D7D7D;display: -webkit-box;-webkit-line-clamp: 5;-webkit-box-orient: vertical;overflow: hidden;line-height: 35px;padding: 10px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{item.content}}</p>
         </div>
         </a>
       </div>

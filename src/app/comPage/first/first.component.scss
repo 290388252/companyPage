@@ -57,11 +57,11 @@
 .companyInfo {
   /*width: 1338px;*/
   width: 100%;
-  border: rgba(121, 121, 121, 1) 1px solid;
+  border: #dadada 1px solid;
   padding: 50px 5%;
 }
 .companyInfo_title h1{
-  color: #0099FF !important;
+  color: #4DC0E8 !important;
   padding: 10px 0px;
 }
 .companyInfo_content {
@@ -96,12 +96,12 @@
 }
 .textImg_title {
   width: 200px;
-  margin: 30px auto;
+  margin: 30px auto 0;
   padding: 10px 0;
   text-align: center;
-  border-bottom: #0099FF 1px solid;
-  border-top: #0099FF 1px solid;
-  color: #0099FF;
+  border-bottom: #4DC0E8 2px solid;
+  border-top: #4DC0E8 2px solid;
+  color: #4DC0E8;
 }
 .textImg_content ul li{
   list-style: none;
@@ -143,12 +143,11 @@ button{
 }
 button:hover{
   cursor: pointer;
-  //background: rgba(0, 153, 255, 1);
-  //color: #FFFFFF;
-  //box-shadow:5px 5px 5px rgba(0, 0, 0,0.3);
-}
-.more button{
-  font-weight: bold;
+  //background: white;
+  //color: black;
+  background: rgb(244, 252, 255);
+  color: #030303;
+  box-shadow:5px 5px 5px rgba(0, 0, 0,0.3);
 }
 .mult_line_ellipsis{
   overflow: hidden;

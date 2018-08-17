@@ -3,10 +3,10 @@
   padding: 0;
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1440px) {
   .newcont {
     width: 100%;
-    max-width: 1280px;
+    max-width: 1440px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -17,7 +17,7 @@
     margin-bottom: 10px;
     overflow: hidden;
     //margin: 10px;
-    border: solid 1px gray;
+    border: solid 1px #dadada;
   }
   .outimg {
     width: 400px;
@@ -46,7 +46,7 @@
 }
 
 /* 大屏幕（大桌面显示器，大于等于 1100px） */
-@media (min-width: 993px) and (max-width: 1279px) {
+@media (min-width: 993px) and (max-width: 1439px) {
   .newcont {
     width: 100%;
     max-width: 1200px;
@@ -116,7 +116,7 @@
   }
   .newcontText {
     width: 100%;
-    //padding: 0 10px;
+    padding: 0 10px;
     margin-top: -16px;
     text-align: left;
   }

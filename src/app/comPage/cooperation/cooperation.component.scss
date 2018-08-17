@@ -41,7 +41,7 @@
     border-top: 2px solid #05b3ff;
   }
   .co_text{
-    background-color: #fcfcfc;
+    //background-color: #fcfcfc;
     text-indent: 2em;
     font-size: 1.25em;
     font-family: "Microsoft YaHei",Arial;
@@ -57,7 +57,7 @@
   .co_list{
     width: 100%;
     max-width: 1440px;
-    background-color: #fcfcfc;
+    //background-color: #fcfcfc;
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -73,7 +73,7 @@
     display: inline-block;
     width: 80%;
     max-width: 300px;
-    height: auto;
+    height: 200px;
     //margin-left: 4%;
     margin-top: 2%;
   }
