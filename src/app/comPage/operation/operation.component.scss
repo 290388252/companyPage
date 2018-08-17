@@ -92,6 +92,8 @@
   }
   #cont .cont_img {
     width: 100%;
+    height: 100%;
+    border: solid 2px gray;
   }
   #cont .cont_text {
     padding: 10px;
@@ -185,6 +187,7 @@
   }
   #cont .cont_img {
     width: 500px;
+    border: solid 2px gray;
   }
   #cont .cont_text {
     width: 500px;
@@ -297,6 +300,11 @@
     margin-top: 56px;
     background: #E2CEB7;
   }
+  #cont .cont_img {
+    width: 500px;
+    height: 100%;
+    border: solid 2px gray;
+  }
   .cont_more {
     width: 212px;
     height: 170px;
@@ -335,21 +343,21 @@
   }
 }
 .cont_img:hover {
-  box-shadow: -5px 5px 14px 3px rgba(130, 130, 130, 1);
+  //box-shadow: -5px 5px 14px 3px rgba(130, 130, 130, 1);
   //box-shadow: -5px 5px 15px 1px rgba(130, 130, 130, 1);
 }
 .cont_img2:hover {
-  box-shadow: -5px 5px 14px 3px rgba(130, 130, 130, 1);
+  //box-shadow: -5px 5px 14px 3px rgba(130, 130, 130, 1);
 
   //box-shadow: 0 0 0 10px rgba(255,255,255,.25);
 }
 .cont_bt div:hover {
-  box-shadow: -5px 5px 14px 3px rgba(130, 130, 130, 1);
+  //box-shadow: -5px 5px 14px 3px rgba(130, 130, 130, 1);
 
   //box-shadow: 0 0 0 10px rgba(255,255,255,.25);
 }
 .hoverShadow:hover {
-  box-shadow: -5px 5px 14px 3px rgba(130, 130, 130, 1);
+  //box-shadow: -5px 5px 14px 3px rgba(130, 130, 130, 1);
   cursor: pointer;
 }
 .content {

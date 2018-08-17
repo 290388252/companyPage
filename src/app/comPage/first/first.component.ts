@@ -29,7 +29,7 @@ export class FirstComponent implements OnInit {
    this.imgUrl = appProperties.getImgUrl() + '/articleImg/';
   }
   ngOnInit() {
-    this.appService.postData(this.officialArticleUrl, {sid: 7}).subscribe(
+    this.appService.postData(this.officialArticleUrl, {'sid': 9, 'pageSize': 9}).subscribe(
       data => {
         console.log(data);
         if (data.returnObject.length >= 3) {
