@@ -418,3 +418,10 @@ input:focus {
 textarea:focus {
   outline-color: #4DC0E8;
 }
+.hoverShadow {
+  background: #4cc0e7;
+}
+.hoverShadow:hover {
+  background: #189bd3;
+  color: white;
+}
