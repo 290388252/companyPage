@@ -45,3 +45,23 @@
 
   //box-shadow: 0 0 0 10px rgba(255,255,255,.25);
 }
+.more{
+  width: 191px;
+  margin: 20px auto;
+}
+button{
+  padding: 5px 50px;
+  border-radius: 10px;
+  background: none;
+  border: rgba(121, 121, 121, 0) 1px solid;
+  font-size: 20px;
+  height: 50px;
+}
+button:hover{
+  cursor: pointer;
+  //background: white;
+  //color: black;
+  background: rgb(244, 252, 255);
+  color: #030303;
+  box-shadow:5px 5px 5px rgba(0, 0, 0,0.3);
+}
