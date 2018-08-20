@@ -9,7 +9,8 @@
  }*/
 .banner {
   position: relative;
-  width: 100%;
+  width: 1440px;
+  margin: 0 auto;
 }
 
 .banner_img {
@@ -59,15 +60,16 @@
 }
 
 .containers {
-  width: 1440px;
-  margin: 0px auto;
+  //width: 1440px;
+  //margin: 0px auto;
   color: #333333;
 }
 
 .companyInfo {
   /*width: 1338px;*/
-  width: 100%;
-  border: #dadada 1px solid;
+  width: 1440px;
+  //border: #dadada 1px solid;
+  margin: 0 auto;
   padding: 50px 5%;
 }
 
@@ -122,7 +124,10 @@
   border-top: #4DC0E8 2px solid;
   color: #4DC0E8;
 }
-
+.textImg_content{
+  width: 1440px;
+  margin: 0 auto;
+}
 .textImg_content ul li {
   list-style: none;
   float: left;

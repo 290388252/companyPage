@@ -122,5 +122,8 @@
     margin: 1em auto;
   }
 }
-
+.animated {
+  animate-duration: 4s; //动画持续时间
+  animate-delay: 4s;
+}
 

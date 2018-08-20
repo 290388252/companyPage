@@ -66,3 +66,7 @@ button:hover{
   color: white;
   box-shadow:5px 5px 5px rgba(0, 0, 0,0.3);
 }
+.animated {
+  animate-duration: 4s; //动画持续时间
+  animate-delay: 4s;
+}
