@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  overflow: hidden;
 }
 
 /* 小屏幕（平板，大于等于 768px） */
@@ -246,7 +247,7 @@
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
   }
   .rich_text_all {
     //width: 100%;
@@ -325,7 +326,7 @@
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
   }
   .rich_text_all {
     //width: 50%;
