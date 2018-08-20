@@ -7,12 +7,15 @@ import { CooperationRoutingModule } from './cooperation-routing.module';
 import { CooperationComponent } from './cooperation.component';
 import {AppService} from '../../app-service';
 import {AppProperties} from '../../app.properties';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 @NgModule({
   imports: [
     CommonModule,
     CooperationRoutingModule,
     TranslateModule,
+    FormsModule,
+    ReactiveFormsModule,
     NgbDropdownModule.forRoot()
   ],
   providers: [AppService, AppProperties],

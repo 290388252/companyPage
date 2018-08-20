@@ -2,7 +2,6 @@ import {Component, Input, OnInit} from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
 import { routerTransition } from '../../router.animations';
-import {_document} from "@angular/platform-browser/src/browser";
 // import {CooperationPage} from "./cooperationPage";
 import {HttpClient} from "@angular/common/http";
 import {AppProperties} from "../../app.properties";
@@ -13,7 +12,7 @@ import {Observable} from '../../../../node_modules/rxjs';
 @Component({
   selector: 'app-infopage',
   templateUrl: './info.component.html',
-  styleUrls: ['./info.component.scss'],
+  styleUrls: ['./info.component.scss', '../animate/animate.min.css'],
   animations: [routerTransition()]
 })
 

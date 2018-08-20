@@ -81,6 +81,11 @@ export class NewcenterComponent implements OnInit {
         console.log(error);
       });
   }
+  //
+  turnTo (val, id) {
+    const articleCont = document.getElementById(id);
+    articleCont.innerHTML = val;
+  }
   // 页面跳转
   pageChanged(event: any): void {
     this.disable = true;

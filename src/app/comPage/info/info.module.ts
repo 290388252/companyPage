@@ -7,7 +7,7 @@ import { InfoRoutingModule } from './info-routing.module';
 import { InfoComponent } from './info.component';
 import {AppService} from '../../app-service';
 import {AppProperties} from '../../app.properties';
-import {FormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 @NgModule({
   imports: [
@@ -15,6 +15,7 @@ import {FormsModule} from '@angular/forms';
     InfoRoutingModule,
     TranslateModule,
     FormsModule,
+    ReactiveFormsModule,
     NgbDropdownModule.forRoot()
   ],
   providers: [AppService, AppProperties],

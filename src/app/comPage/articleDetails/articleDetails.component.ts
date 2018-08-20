@@ -26,7 +26,7 @@ export class ArticleDetailsComponent implements OnInit {
   public imgPath;
   public articletitle;
   public articleDate;
-  public articleCont;
+  // public articleCont;
   public articleImg;
   public id;
 
@@ -44,7 +44,9 @@ export class ArticleDetailsComponent implements OnInit {
     this.getData();
 
   }
-
+  back() {
+      history.back();
+  }
   // 初始化数据;
 
   getData() {
@@ -54,7 +56,8 @@ export class ArticleDetailsComponent implements OnInit {
         if (data.status === 1) {
           this.articletitle = data.returnObject.title;
           this.articleDate = data.returnObject.createTime;
-          this.articleCont = data.returnObject.content;
+          const articleCont = document.getElementById('articleCont');
+          articleCont.innerHTML = articleCont.innerHTML + data.returnObject.content;
           this.articleImg = this.imgPath + data.returnObject.url;
           console.log(data.returnObject);
         } else if (data.status === -1) {
