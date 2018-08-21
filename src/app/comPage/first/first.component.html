@@ -39,8 +39,8 @@
             <h4 style="color: #4DC0E8;padding: 10px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;width: 279px;">{{item.title}}</h4>
           </div>
           <!--<span>{{item.createTime}}</span>-->
-          <p class="mult_line_ellipsis" style="padding: 10px;border: solid 1px #dadada">
-            {{item.content}}
+          <p [id]="item.id" class="mult_line_ellipsis" style="padding: 10px;border: solid 1px #dadada">
+            {{turnTo(item.content, item.id)}}
           </p>
         </li>
         <!--<li>

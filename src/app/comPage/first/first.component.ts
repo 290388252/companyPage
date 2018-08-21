@@ -70,4 +70,8 @@ export class FirstComponent implements OnInit {
   toProduct() {
     this.router.navigate(['comPageMain/product']);
   }
+  turnTo (val, id) {
+    const articleCont = document.getElementById(id);
+    articleCont.innerHTML = val;
+  }
 }
