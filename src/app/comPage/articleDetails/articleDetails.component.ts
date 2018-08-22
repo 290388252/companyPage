@@ -40,7 +40,7 @@ export class ArticleDetailsComponent implements OnInit {
     this.articleDetailsForm = new ArticleDetailsForm();
     this.disable = true;
     this.id = this.routerIonfo.snapshot.queryParams['id'];
-    console.log(this.id);
+    // console.log(this.id);
     this.getData();
 
   }
@@ -57,9 +57,12 @@ export class ArticleDetailsComponent implements OnInit {
           this.articletitle = data.returnObject.title;
           this.articleDate = data.returnObject.createTime;
           const articleCont = document.getElementById('articleCont');
-          articleCont.innerHTML = articleCont.innerHTML + data.returnObject.content;
+          const content = data.returnObject.content.replace(new RegExp('<p>','g'), "<span>");
+          // articleCont.innerHTML = articleCont.innerHTML + data.returnObject.content;
+          articleCont.innerHTML = articleCont.innerHTML + content.replace(new RegExp('</p>','g'), "</span><br>");
           this.articleImg = this.imgPath + data.returnObject.url;
-          console.log(data.returnObject);
+
+          // console.log(data.returnObject);
         } else if (data.status === -1) {
           this.router.navigate(['systemAdminLogin']);
         }

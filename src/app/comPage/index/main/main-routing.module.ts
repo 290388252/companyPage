@@ -16,8 +16,8 @@ const routes: Routes = [
       {path: 'operation', loadChildren: '../../operation/operation.module#OperationPageModule'},
       {path: 'product', loadChildren: '../../product/product.module#ProductPageModule'},
       {path: 'articleDetails', loadChildren: '../../articleDetails/articleDetails.module#ArticleDetailsModule'},
-      {path: 'joinUs', loadChildren: '../../joinUs/joinUs.module#JoinUsModule'}
-      // {path: 'productIntroduce', loadChildren: '../../productIntroduce/productIntroduce.module#ProductIntroduceModule'}
+      {path: 'joinUs', loadChildren: '../../joinUs/joinUs.module#JoinUsModule'},
+      {path: 'productIntroduce', loadChildren: '../../productIntroduce/productIntroduce.module#ProductIntroduceModule'}
 
     ]
   }

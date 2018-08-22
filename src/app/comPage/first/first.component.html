@@ -36,7 +36,7 @@
           <!--<img src="../../../assets/first/news_01.jpg"/>-->
           <img [src]="imgUrl + item.url" />
           <div style="width: 100%;border: solid 1px #dadada;">
-            <h4 style="color: #4DC0E8;padding: 10px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;width: 279px;">{{item.title}}</h4>
+            <h4 style="color: #4DC0E8;padding: 10px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;width: 100%;">{{item.title}}</h4>
           </div>
           <!--<span>{{item.createTime}}</span>-->
           <p [id]="item.id" class="mult_line_ellipsis" style="padding: 10px;border: solid 1px #dadada">
@@ -68,7 +68,7 @@
     <div class="textImg_title"><h2>合作案例</h2></div>
     <p style="text-align: center;margin-bottom: 10px;color: #4DC0E8">COOPERATION CASE</p>
     <div class="textImg_content">
-      <ul>
+      <ul class="caresContent">
         <!--<li *ngFor="let item of articleList1">-->
           <!--&lt;!&ndash;<img src="../../../assets/first/news_01.jpg"/>&ndash;&gt;-->
           <!--<img [src]="imgUrl + item.url" />-->
@@ -78,17 +78,17 @@
             <!--{{item.remark}}-->
           <!--</p>-->
         <!--</li>-->
-       <li style="width: 45%;margin-left: 5%">
-          <img style="width: 70%;border: solid 1px #dadada" src="../../../assets/operation/operation_05.jpg"/>
-          <h3 style="color: #4DC0E8;width: 70%;border: solid 1px #dadada;padding: 10px">保利物业 — 熊猫仓</h3>
+       <li>
+          <img style="border: solid 1px #dadada" src="../../../assets/operation/operation_05.jpg"/>
+          <h3 style="color: #4DC0E8;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;border: solid 1px #dadada;padding: 10px">保利物业 — 熊猫仓</h3>
           <!--<span>2018-8-01</span>-->
-          <p style="width: 70%;border: solid 1px #dadada;padding: 10px" class="mult_line_ellipsis">熊猫仓是保利物业旗下社区增值服务平台, 为社区提供生活、资产、财富等全方位增 值服务....</p>
+          <p class="mult_line_ellipsis">熊猫仓是保利物业旗下社区增值服务平台, 为社区提供生活、资产、财富等全方位增 值服务....</p>
         </li>
-        <li style="width: 45%;margin-left: 5%">
-          <img style="width: 70%;border: solid 1px gray" src="../../../assets/operation/operation_13.jpg"/>
-          <h3 style="color: #4DC0E8;width: 70%;border: solid 1px #dadada;padding: 10px">雅居乐物业 — 雅生活</h3>
+        <li>
+          <img style="border: solid 1px gray" src="../../../assets/operation/operation_13.jpg"/>
+          <h3 style="color: #4DC0E8; overflow: hidden;text-overflow: ellipsis;white-space: nowrap;border: solid 1px #dadada;padding: 10px">雅居乐物业 — 雅生活</h3>
           <!--<span>2018-8-01</span>-->
-          <p class="mult_line_ellipsis" style="width: 70%;border: solid 1px #dadada;padding: 10px">优水到家联合雅居乐物业，为社区住户带 去健康便利的优水生活。同时也符合为社 区生活带来....</p>
+          <p class="mult_line_ellipsis">优水到家联合雅居乐物业，为社区住户带 去健康便利的优水生活。同时也符合为社 区生活带来....</p>
         </li>
         <div class="clear-fix"></div>
       </ul>

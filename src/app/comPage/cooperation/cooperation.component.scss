@@ -3,7 +3,7 @@
   padding:0;
 }
 
-@media screen and (min-device-width: 560px) {
+@media all and (min-width: 561px) {
   .content{
     width: 100%;
     max-width: 1440px;
@@ -17,28 +17,25 @@
   }
   .co_exhibition img{
     width: 100%;
-    height: 100%;
-  }
-  .co_business{
-    width: 100%;
     height: auto;
-    background-color: #fff;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-align-items: center;
-    align-items: center;
-    -webkit-justify-content: center;
-    justify-content: center;
   }
-  .co_business p{
-    font-size: 1.25em;
-    font-family: "Microsoft YaHei",Arial;
-    color: #05b3ff;
-    padding: 5px 15px;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    border-bottom: 2px solid #05b3ff;
-    border-top: 2px solid #05b3ff;
+  .co_title{
+    width: 212px;
+    height: 66px;
+    margin: 15px auto;
+    border-bottom: 2px solid #4DC0E8;
+    border-top: 2px solid #4DC0E8;
+    line-height: 66px;
+    font-size: 30px;
+    letter-spacing: 4px;
+    text-align: center;
+    color: #4DC0E8
+  }
+  .engTitle{
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    color: #4DC0E8
   }
   .co_text{
     //background-color: #fcfcfc;
@@ -85,41 +82,46 @@
   }
 }
 
-@media screen and (max-device-width: 560px){
+@media all and (max-width: 560px){
   .content{
     width: 100%;
     margin: 0 auto;
   }
   .co_exhibition{
     width: 100%;
+    height: auto;
   }
   .co_exhibition img{
     width: 100%;
-    max-width: 180px;
     height: auto;
   }
-  .co_business{
-    width: 100%;
-  }
-  .co_business p{
-    margin: .5em auto;
-    width: 5em;
-    font-size: 1.25em;
+  .co_title{
+    width: 100px;
+    margin: 10px auto;
+    border-bottom: 2px solid #4DC0E8;
+    border-top: 2px solid #4DC0E8;
+    color: #4DC0E8;
     text-align: center;
-    color: #05b3ff;
-    padding: 0 .1em;
-    border-top: .1em solid #05b3ff;
-    border-bottom: .1em solid #05b3ff;
+  }
+  .engTitle{
+    width: 120px;
+    margin: 5px auto;
+    color: #4DC0E8;
+    text-align: center;
+    font-size: 16px;
   }
   .co_text{
     width: 100%;
     background-color: #fcfcfc;
     text-indent: 2em;
-    padding: 2em 1em;
+    padding: 25px 10px;
   }
   .co_list img{
     display: block;
-    margin: 1em auto;
+    margin: 15px auto;
+    width: 100%;
+    height: auto;
+    max-width: 280px;
   }
 }
 .animated {
