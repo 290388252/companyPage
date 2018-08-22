@@ -1,0 +1,263 @@
+
+* {
+  margin:0;
+  padding:0;
+  font-family: "Microsoft YaHei", Arial;
+}
+@media all and (max-width: 620px){
+  .containers{
+    width: 100%;
+    font-size: 60%;
+  }
+  .aboutUsImg img {
+    width: 100%;
+    height: auto;
+  }
+  .product-content img{
+    width: 100%;
+    max-width: 80px;
+  }
+  .product-title{
+    margin: 2% auto;
+  }
+  .product-title h2{
+    width: 40%;
+    margin: 0 auto;
+    color: #05b3ff;
+    font-size: 5%;
+    text-align: center;
+    border-top: 1px solid #05b3ff;
+    border-bottom: 1px solid #05b3ff;
+  }
+  .engTitle{
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 5%;
+    color: #05b3ff;
+  }
+  .product-content{
+    width: 100%;
+    margin-top: 2%;
+    padding: 2% 2%;
+  }
+  .row_left,.row_right{
+    margin: 2%;
+  }
+  .item_title{
+    color: #FFFFFF;
+    display: block;
+    background-color: #4cc0e7;
+    text-align: center;
+  }
+  .row_wrapper{
+    display: flex;
+    padding-top: 2%;
+  }
+  .item_left{
+    width: 30%;
+    flex: 1;
+  }
+  .item_right{
+    width: 40%;
+    font-size: 2%;
+    flex: 1;
+  }
+  .item_p1{
+    color: #333333;
+    font-weight: bold;
+  }
+  .item_p2{
+    color: #4DC0E8;
+  }
+  .item_p3{
+    color: #666666;
+  }
+}
+
+@media all and (min-width: 621px) and (max-width: 1240px){
+  .containers{
+    width: 100%;
+  }
+  .aboutUsImg{
+    width: 100%;
+    height: auto;
+  }
+  .aboutUsImg img{
+    width: 100%;
+    height: auto;
+  }
+  .product-content img{
+    width: 100%;
+    max-width: 60px;
+  }
+  .product-title{
+    margin: 2% auto;
+  }
+  .product-title h2{
+    width: 30%;
+    margin: 0 auto;
+    color: #05b3ff;
+    font-size: 25%;
+    text-align: center;
+    border-top: 1px solid #05b3ff;
+    border-bottom: 1px solid #05b3ff;
+  }
+  .engTitle{
+    width: 40%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 25%;
+    color: #05b3ff;
+  }
+  .product-content{
+    width: 100%;
+    margin-top: 2%;
+    padding: 2% 2%;
+  }
+  .product_row{
+    width: 100%;
+    display: flex;
+    font-size: 4%;
+    padding: 2% 2%;
+  }
+  .row_left{
+    flex: 1;
+    position: relative;
+  }
+  .item_title{
+    background-color: #4DC0E8;
+    color: #FFFFFF;
+    position: absolute;
+    top: -10px;
+    left: 30px;
+  }
+  .item_left{
+    width: 100px;
+    height: 220px;
+    float: left;
+    border: 1px solid #4DC0E8;
+    text-align: center;
+    line-height: 180px;
+  }
+  .item_right{
+    height: 220px;
+    border: 1px dashed #DADADA;
+    border-left: none;
+  }
+  .row_right{
+    flex: 1;
+    position: relative;
+  }
+  .item_p1{
+    color: #333333;
+  }
+  .item_p2{
+    color: #4DC0E8;
+  }
+  .item_p3{
+    color: #666666;
+  }
+}
+
+@media all and (min-width: 1241px) {
+  .containers{
+    width: 1349px;
+    margin: 0 auto;
+  }
+  .aboutUsImg {
+    width: 100%;
+    height: auto;
+  }
+  .aboutUsImg img{
+    display: block;
+    width: 100%;
+  }
+  .product-title{
+    width: 300px;
+    margin: 30px auto 0;
+    padding: 10px 0px;
+    text-align: center;
+    border-bottom: #4DC0E8 2px solid;
+    border-top: #4DC0E8 2px solid;
+  }
+  .engTitle{
+    text-align: center;
+    margin-bottom: 10px;
+    color: #4DC0E8;
+    font-size: 20px;
+  }
+  .product-title h2 {
+    color: #4DC0E8 !important;
+  }
+  .product-content{
+    width: 1240px;
+    margin: 0 auto;
+  }
+  .product_row {
+    width: 100%;
+    height: 260px;
+    margin: 35px auto;
+  }
+  .row_left{
+    width: 600px;
+    height: 260px;
+    float: left;
+    position: relative;
+  }
+  .item_title{
+    position: absolute;
+    top: -15px;
+    left: 47px;
+    background-color: #4DC0E8;
+    color: #fcfcfc;
+    display: block;
+    width: 104px;
+    height: 30px;
+    text-align: center;
+    padding: 3px 15px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .row_right{
+    width: 600px;
+    height: 260px;
+    float: right;
+    position: relative;
+  }
+
+  .row_wrapper{
+    clear: both;
+  }
+  .item_left{
+    width: 198px;
+    height: 256px;
+    float: left;
+    border: 1px solid #93CDE1;
+    text-align: center;
+    line-height: 256px;
+  }
+  .item_right{
+    width: 398px;
+    height: 256px;
+    float: left;
+    border: 1px dashed #DADADA;
+    border-left: none;
+    padding: 20px 20px;
+    font-size: 17px;
+    letter-spacing: 2px;
+  }
+  .item_p1{
+    color: #333333;
+  }
+  .item_p2{
+    color: #4DC0E8;
+  }
+  .item_p3{
+    color: #666666;
+  }
+  .product-content img{
+    width: 95px;
+    height: 210px;
+  }
+}
