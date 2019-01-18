@@ -19,6 +19,9 @@
       <li class="li22" (click)="selectCol(22)" [routerLink]="['product']" [routerLinkActive]="['router-link-active']"><a
         class="abtn btn rounded-btn" [routerLink]="['product']" [routerLinkActive]="['router-link-active']">关于优水</a>
       </li>
+      <li class="li66" (click)="select(6)" [routerLink]="['attractInvestment']" [routerLinkActive]="['router-link-active']">
+        <a class="abtn btn rounded-btn" [routerLink]="['attractInvestment']" [routerLinkActive]="['router-link-active']">招商加盟</a>
+      </li>
       <li class="li77" (click)="selectCol(77)" [routerLink]="['productIntroduce']" [routerLinkActive]="['router-link-active']"><a
         class="abtn btn rounded-btn" [routerLink]="['productIntroduce']" [routerLinkActive]="['router-link-active']">产品介绍</a>
       </li>
@@ -31,14 +34,17 @@
       <li class="li55" (click)="selectCol(55)" [routerLink]="['cooperation']"
           [routerLinkActive]="['router-link-active']"><a class="abtn btn rounded-btn" [routerLink]="['newcenter']"
                                                          [routerLinkActive]="['router-link-active']">合作伙伴</a></li>
-      <li class="li66" (click)="selectCol(66)" [routerLink]="['info']" [routerLinkActive]="['router-link-active']"><a
-        class="abtn btn rounded-btn" [routerLink]="['info']" [routerLinkActive]="['router-link-active']">联系我们</a></li>
+      <!--<li class="li66" (click)="selectCol(66)" [routerLink]="['info']" [routerLinkActive]="['router-link-active']"><a-->
+        <!--class="abtn btn rounded-btn" [routerLink]="['info']" [routerLinkActive]="['router-link-active']">联系我们</a></li>-->
     </ul>
   </div>
   <div class="header-title" [hidden]="hidden">
     <ul id="menu">
       <li class="li1 selected" (click)="select(1)" [routerLink]="['first']" [routerLinkActive]="['router-link-active']">
         <a id="a1" class="abtn btn rounded-btn" [routerLink]="['first']" [routerLinkActive]="['router-link-active']">网站首页</a>
+      </li>
+      <li class="li6" (click)="select(6)" [routerLink]="['attractInvestment']" [routerLinkActive]="['router-link-active']">
+        <a id="a6" class="abtn btn rounded-btn" [routerLink]="['attractInvestment']" [routerLinkActive]="['router-link-active']">招商加盟</a>
       </li>
       <li class="li2" (click)="select(2)" [routerLink]="['product']" [routerLinkActive]="['router-link-active']"><a
         id="a2" class="abtn btn rounded-btn" [routerLink]="['product']"
@@ -55,11 +61,11 @@
       <li class="li5" (click)="select(5)" [routerLink]="['cooperation']" [routerLinkActive]="['router-link-active']"><a
         id="a5" class="abtn btn rounded-btn" [routerLink]="['newcenter']" [routerLinkActive]="['router-link-active']">合作伙伴</a>
       </li>
-      <li class="li6" (click)="select(6)" [routerLink]="['info']" [routerLinkActive]="['router-link-active']"><a id="a6"
-                                                                                                                 class="abtn btn rounded-btn"
-                                                                                                                 [routerLink]="['info']"
-                                                                                                                 [routerLinkActive]="['router-link-active']">联系我们</a>
-      </li>
+      <!--<li class="li6" (click)="select(6)" [routerLink]="['info']" [routerLinkActive]="['router-link-active']"><a id="a6"-->
+                                                                                                                 <!--class="abtn btn rounded-btn"-->
+                                                                                                                 <!--[routerLink]="['info']"-->
+                                                                                                                 <!--[routerLinkActive]="['router-link-active']">联系我们</a>-->
+      <!--</li>-->
       <!--<div class="header-search" (click)="isSearch = !isSearch"><img src="../../../assets/first/u12.png"/></div>-->
       <div class="clear_fix"></div>
     </ul>

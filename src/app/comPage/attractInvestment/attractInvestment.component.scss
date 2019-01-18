@@ -1,0 +1,19 @@
+* {
+  margin:0;
+  padding:0;
+}
+.content {
+  display: inline;
+}
+.more{
+  width: 191px;
+  margin: 20px auto;
+}
+.animated {
+  animate-duration: 4s; //动画持续时间
+  animate-delay: 4s;
+}
+p{
+  color: #666666;
+  padding: 10px;
+}
